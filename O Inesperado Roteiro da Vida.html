@@ -1,0 +1,423 @@
+<!doctype= html> <!-- Página criada por Vicente Parmigiani em 10/09/2017 às 17:30h-->
+<html lang="pt">
+	<head>
+		<title>O Inesperado Roteiro da Vida</title>
+		<link rel="icon" type="image/png" href="Media\Pic\ic_movie_black_24dp_2x.png" />
+		<link rel="stylesheet" type="text/css" href="Audio.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+		<meta charset="ISO-8859-1"> <!-- Para páginas em Português, Brasil. -->
+		<script src="Audio.js"></script>
+	</head>
+	<body id="body" onload="init()" onoffline="internet(false)" ononline="internet(true)">
+		<div id="darkSide" class="hide" onclick="closeIO()"></div>
+		<div id="title">
+			<text class="title">O Inesperado Roteiro da Vida</text>
+			<br/>
+			<text class="title" style="font-size:18pt">Primavera Cultural 2017</text>
+			<br/><br/><br/><br/><br/>
+			<img src="Media/Pic/claquete.png" type="image/png" id="unlock" style="opacity: 0.9" onclick="start()"/>
+		</div>
+		<img src="Media/Pic/ic_arrow_back_white_48dp_2x.png" title="Voltar" onclick="prev()" id="arrow1" width="40px" type="image/png" style="right:10%"/>
+		<img src="Media/Pic/ic_arrow_back_white_48dp_2x.png" title="Avançar" onclick="next()" id="arrow2" width="40px" type="image/png" style="right:5%;transform:rotate(180deg);"/>
+		<img src="Media/Pic/ic_chrome_reader_mode_white_24dp_2x.png" title="Índice" onclick="searchIO()" id="arrow3" width="35px" type="image/png" style="right:15%;top:5.26%"/>
+		<img src="Media/Pic/ic_settings_white_48dp_1x.png" title="Configurações" onclick="settingsIO()" id="arrow4" width="35px" type="image/png" style="right:20%;top:5.26%"/>
+		<div id="title2">
+			<text class="title" style="font-size:16pt">O Inesperado Roteiro da Vida</text>
+			<br/>
+			<text class="title" style="font-size:12pt">Primavera Cultural 2017</text>
+		</div>
+		<div id="description">
+			<text class="title">Por Vicente Parmigiani</text>
+			<br/>
+			<text class="title" style="font-size:18pt">Colégio Franciscano São José</text>
+			<br/>
+			<text class="title" style="font-size:18pt">v 3.1.0</text>
+		</div>
+		<div id="main">
+				<div id="pg1" style="transition-duration: 1s;">
+					<h1 id="t1">Irmãos Lumière</h1>
+					<div class="card" id="card1">
+						<text class="description">Música Ambiente</text>
+						<br/>
+						<text class="description2">Together With You</text>
+						<br/><br/>
+						<text class="description3">A música é reproduzida enquanto as pessoas entram no café e sentam-se nas mesas.</text>
+						<audio controls style="position:relative; bottom:-46%">
+							<source src="Media\Sound\Together_With_You.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+					<div class="card" id="card2" style="margin-left: 400px">
+						<text class="description">Vídeo</text>
+						<br/>
+						<text class="description2">Arrival of a Train at la Ciotat</text>
+						<br/><br/>
+						<text class="description3">Vídeo passado nos telões.</text>
+						<video controls width="225px" height="150px" style="position:relative; bottom:-5%; margin-left: 37px">
+							<source src="Media\Sound\Train.mp4" type="video/mp4">
+							Áudio não é suportado por seu navegador!
+						</video>
+					</div>
+					<div class="card" id="card24" style="margin-left: 800px">
+						<text class="description">Música de Fundo</text>
+						<br/>
+						<text class="description2">Poema</text>
+						<br/><br/>
+						<text class="description3">Música de fundo tocada enquanto o poema <i>"No Mundo da Imaginação"</i> é declamado.</text>
+						<audio controls style="position:relative; bottom:-46%">
+							<source src="Media\Sound\POEMA- PLENAMENTE MÚSICA DE FUNDO- CHUVAS.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+				</div>
+				<div id="pg2" style="transition-duration: 1s;">
+					<h1 id="t2">Chaplin e Singing in the Rain</h1>
+					<div class="card" id="card3">
+						<text class="description">Música</text>
+						<br/>
+						<text class="description2">Hammock Fight</text><br/>
+						<br/><br/>
+						<text class="description3">Música tocada durante a cena do chaplin e sinal da fábrica.</text>
+						<audio controls style="position:relative; bottom:-21%">
+							<source src="Media/Sound/Hammock Fight.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+					<div class="card" id="card19"  style="margin-left: 400px">
+						<text class="description">Efeitos Sonoros</text>
+						<br/>
+						<text class="description2">Chuva & Trovões</text><br/>
+						<br/><br/>
+						<text class="description3">Efeitos sonoros de chuva e de trovões.</text>
+						<audio controls muted style="position:relative; bottom:-27%">
+							<source src="Media/Sound/Rain_Heavy_Loud.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+						<audio controls style="position:relative; bottom:-32%">
+							<source src="Media/Sound/Distant_Thunder.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+					<div class="card" id="card20"  style="margin-left: 800px">
+						<text class="description">Música</text>
+						<br/>
+						<text class="description2">Singing in the Rain</text><br/>
+						<br/><br/>
+						<text class="description3">Música do filme Singing in the Rain.</text>
+						<audio controls style="position:relative; bottom:-27%">
+							<source src="Media/Sound/Gene Kelly - Singing in the Rain.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+				</div>
+				<div id="pg3" style="transition-duration: 1s;">
+					<h1 id="t3">Titanic</h1>
+					<div class="card" id="card4">
+						<text class="description">Gravação</text>
+						<br/>
+						<text class="description2">Fala do Henrique</text><br/>
+						<br/><br/>
+						<text class="description3">Áudio do Henrique falando um trecho do filme.</text>
+						<audio controls style="position:relative; bottom:-27%">
+							<source src="Media/Sound/Henrique.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+					<!--div class="card" id="card5" style="margin-left: 400px">
+						<text class="description">Efeito Sonoro</text>
+						<br/>
+						<text class="description2">Navio</text><br/>
+						<br/><br/>
+						<text class="description3">Som da buzina do navio.</text>
+						<audio controls style="position:relative; bottom:-27%">
+							<source src="Media/Sound/TOQUE PARA CELULAR - BUZINA DE NAVIO.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div-->
+					<div class="card" id="card6" style="margin-left: 400px">
+						<text class="description">Música de Fundo</text>
+						<br/>
+						<text class="description2">Navio saindo do porto</text><br/>
+						<br/><br/>
+						<text class="description3">Reproduzido quando as pessoas estão embarcando e saindo do porto.</text>
+						<audio controls style="position:relative; bottom:-21%">
+							<source src="Media/Sound/The Boat Leaving The Port  Official Clip HD.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+				</div>
+				<div id="pg4" style="transition-duration: 1s;">
+					<h1 id="t4">Avatar</h1>
+					<div class="card" id="card7">
+						<text class="description">Música</text>
+						<br/>
+						<text class="description2">Música tema de Avatar</text><br/>
+						<br/><br/>
+						<text class="description3">Tocada durante o ritual.</text>
+						<audio controls style="position:relative; bottom:-21%">
+							<source src="Media/Sound/James Horner - Avatar Theme Song (Avatar Soundtrack) HQ 1080p.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+				</div>
+				<div id="pg5" style="transition-duration: 1s;">
+					<h1 id="t5">A Bela e a Fera</h1>
+					<div class="card" id="card25">
+						<text class="description">Música de Fundo</text>
+						<br/>
+						<text class="description2">The Bluest Star</text><br/>
+						<br/><br/>
+						<text class="description3">Música tocada durante a declamação do Pai da Bela.</text>
+						<audio controls style="position:relative; bottom:-15%">
+							<source src="Media/Sound/The_Bluest_Star.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+					<div class="card" id="card8" style="margin-left: 400px">
+						<text class="description">Música</text>
+						<br/>
+						<text class="description2">Beauty and the Beast</text><br/>
+						<br/><br/>
+						<text class="description3">Valsa do filme.</text>
+						<audio controls style="position:relative; bottom:-21%">
+							<source src="Media/Sound/Beauty and the Beast (From Beauty and the BeastOfficial Video).mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+					<div class="card" id="card26" style="margin-left: 800px">
+						<text class="description">Efeito Sonoro</text>
+						<br/>
+						<text class="description2">Sinal de fim de Cena</text><br/>
+						<br/><br/>
+						<text class="description3">Sino que indica o fim do expediente.</text>
+						<audio controls style="position:relative; bottom:-21.5%">
+							<source src="Media/Sound/School Bell Ringing - Sound Effect.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+				</div>
+				<div id="pg6" style="transition-duration: 1s;">
+					<h1 id="t6">Star Wars</h1>
+					<div id="IAmYourFather" title="I am your father"></div>
+					<div class="card" id="card9">
+						<text class="description">Gravação</text>
+						<br/>
+						<text class="description2">Houston e Armstrong</text><br/>
+						<br/><br/>
+						<text class="description3">Diálogo sobre o avistamento da lua.</text>
+						<audio controls style="position:relative; bottom:-27.5%">
+							<source src="Media/Sound/Diálogo Lua.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+					<div class="card" id="card10" style="margin-left: 400px">
+						<text class="description">Música</text>
+						<br/>
+						<text class="description2">Marcha Imperial</text><br/>
+						<br/><br/>
+						<text class="description3">Trilha sonora do filme que é reproduzida durante a batalha.</text>
+						<audio controls style="position:relative; bottom:-21%">
+							<source src="Media/Sound/Star Wars- The Imperial March (Darth Vaders Theme).mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+				</div>
+				<div id="pg7" style="transition-duration: 1s;">
+					<h1 id="t7">Terror</h1>
+					<div class="card" id="card11">
+						<text class="description">Música</text>
+						<br/>
+						<text class="description2">Psicose</text><br/>
+						<br/><br/>
+						<text class="description3">Música do filme psicose.</text>
+						<audio controls style="position:relative; bottom:-27%">
+							<source src="Media/Sound/Psycho (music scene) - The murder (shower theme).mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+					<div class="card" id="card12" style="margin-left: 400px">
+						<text class="description">Efeito Sonoro</text>
+						<br/>
+						<text class="description2">Serra Elétrica</text><br/>
+						<br/><br/>
+						<text class="description3">Som de uma serra elétrica.</text>
+						<audio controls style="position:relative; bottom:-27%">
+							<source src="Media/Sound/Chainsaw Sound Effect.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+					<div class="card" id="card13" style="margin-left: 800px">
+						<text class="description">Efeitos sonoros</text>
+						<br/>
+						<text class="description2">Som de Bicicleta e "Vamos jogar um jogo"</text><br/>
+						<br/><br/>
+						<text class="description3">Som do sino de uma bicicleta e fala do boneco do filme Jogos Mortais.</text>
+						<audio controls style="position:relative; bottom:-21%">
+							<source src="Media/Sound/Bicycle Bell.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+						<audio controls style="position:relative; bottom:-25%">
+							<source src="Media/Sound/Saw.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+				</div>
+				<div id="pg8" style="transition-duration: 1s;">
+					<h1 id="t8">Tropa de Elite e Grease</h1>
+					<div class="card" id="card14">
+						<text class="description">Música</text>
+						<br/>
+						<text class="description2">Rap das Armas</text><br/>
+						<br/><br/>
+						<text class="description3">Início da música com corte após poucos segundos, as duas faixas possuem durações diferentes, com o mesmo conteúdo.</text>
+						<audio controls style="position:relative; bottom:-2.5%">
+							<source src="Media/Sound/Rap das Armas - Tropa de Elite ( Musica )2.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+						<audio controls style="position:relative; bottom:-4.5%">
+							<source src="Media/Sound/Rap das Armas - Tropa de Elite ( Musica ).mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+					<div class="card" id="card15" style="margin-left: 400px">
+						<text class="description">Música</text>
+						<br/>
+						<text class="description2">Summer Nights</text><br/>
+						<br/><br/>
+						<text class="description3">Música do filme Grease.</text>
+						<audio controls style="position:relative; bottom:-15.5%">
+							<source src="Media/Sound/Grease - Summer Nights HD.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+					<div class="card" id="card21" style="margin-left: 800px">
+						<text class="description">Efeitos Sonoros</text>
+						<br/>
+						<text class="description2">Metralhadoras  / Tiro / Sinal do Set</text><br/>
+						<br/><br/>
+						<text class="description3">Som de metralhadoras, tiro e sinal de fim da cena.</text>
+						<audio controls style="position:relative; bottom:-15.5%">
+							<source src="Media/Sound/Gun Fight.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+						<audio controls style="position:relative; bottom:-18.5%">
+							<source src="Media/Sound/Gun Shot.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+						<audio controls style="position:relative; bottom:-21.5%">
+							<source src="Media/Sound/School Bell Ringing - Sound Effect.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+				</div>
+				<div id="pg9" style="transition-duration: 1s;">
+					<h1 id="t9">A Sociedade Dos Poetas Mortos</h1>
+					<div class="card" id="card22">
+						<text class="description">Efeito Sonoro</text>
+						<br/>
+						<text class="description2">Porta Batendo</text><br/>
+						<br/><br/>
+						<text class="description3">Som de  alguém batendo em uma porta.</text>
+						<audio controls style="position:relative; bottom:-27.5%">
+							<source src="Media/Sound/Door Closing Sound FX (Effect).mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+				</div>
+				<div id="pg10" style="transition-duration: 1s;">
+					<h1 id="t10">Oscar</h1>
+					<div class="card" id="card16">
+						<text class="description">Música</text>
+						<br/>
+						<text class="description2">Loves Theme</text><br/>
+						<br/><br/>
+						<text class="description3">Música para a entrada da pessoa no palco do Oscar.</text>
+						<audio controls style="position:relative; bottom:-27.5%">
+							<source src="Media/Sound/Loves Theme - Barry White.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+					<div class="card" id="card23" style="margin-left: 400px">
+						<text class="description">Efeito sonoro</text>
+						<br/>
+						<text class="description2">Som da Piada e Tambores</text><br/>
+						<br/><br/>
+						<text class="description3">Som de piada e de suspense com tambores batendo.</text>
+						<audio controls style="position:relative; bottom:-28%">
+							<source src="Media/Sound/Drum_Roll1.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+						<audio controls style="position:relative; bottom:-30.5%">
+							<source src="Media/Sound/Drum Roll HD.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+					<div class="card" id="card17" style="margin-left: 800px">
+						<text class="description">Música</text>
+						<br/>
+						<text class="description2">We are the Campions</text><br/>
+						<br/><br/>
+						<text class="description3">Comemoração da vitória do Oscar.</text>
+						<audio controls style="position:relative; bottom:-33.5%">
+							<source src="Media/Sound/We are the champions.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+				</div>
+				<div id="pg11" style="transition-duration: 1s;">
+					<h1 id="t11">Quarto</h1>
+					<div class="card" id="card18">
+						<text class="description">Efeito Sonoro</text>
+						<br/>
+						<text class="description2">Alarme</text><br/>
+						<br/><br/>
+						<text class="description3">Som de um despertador tocando.</text>
+						<audio controls style="position:relative; bottom:-27.5%">
+							<source src="Media/Sound/Alarm Clock Bell Sound Effect.mp3" type="audio/mpeg">
+							Áudio não é suportado por seu navegador!
+						</audio>
+					</div>
+				</div>
+		</div>
+		<div id="searchBox">
+			<text style="font-size:18pt;font-weight:300">Índice</text><br/><br/>
+			<text class="searchItem" onclick="search(1)">Irmãos Lumière</text><br/>
+			<text class="searchItem" onclick="search(2)">Chaplin e Singing in the Rain</text><br/>
+			<text class="searchItem" onclick="search(3)">Titanic</text><br/>
+			<text class="searchItem" onclick="search(4)">Avatar</text><br/>
+			<text class="searchItem" onclick="search(5)">A Bela e a Fera</text><br/>
+			<text class="searchItem" onclick="search(6)">Star Wars</text><br/>
+			<text class="searchItem" onclick="search(7)">Terror</text><br/>
+			<text class="searchItem" onclick="search(8)">Tropa de Elite e Grease</text><br/>
+			<text class="searchItem" onclick="search(9)">A Sociedade Dos Poetas Mortos</text><br/>
+			<text class="searchItem" onclick="search(10)">Oscar</text><br/>
+			<text class="searchItem" onclick="search(11)">Quarto</text><br/><br/>
+		</div>
+		<div id="settingsBox" style="text-align: -webkit-right;">
+			<text style="font-size:18pt;font-weight:300">Cor Tema</text><br/><br/>
+			<div id="cp1" class="colorPickS" style="background:linear-gradient(to bottom right, #3F51B5, #009688)" onclick="setColor(1)"></div>
+			<div id="cp6" class="colorPick" style="background:linear-gradient(to bottom right, #009688, #006064)" onclick="setColor(6)"></div>
+			<div id="cp4" class="colorPick" style="background:linear-gradient(to bottom right, #43A047, #33691E)" onclick="setColor(4)"></div>
+			<div id="cp3" class="colorPick" style="background:linear-gradient(to bottom right, #EF6C00, #D84315)" onclick="setColor(3)"></div>
+			<div id="cp5" class="colorPick" style="background:linear-gradient(to bottom right, #FF5722, #E91E63)" onclick="setColor(5)"></div>
+			<div id="cp2" class="colorPick" style="background:linear-gradient(to bottom right, #F44336, #9C27B0)" onclick="setColor(2)"></div>
+			<!--br/><br/>
+			<text style="font-size:18pt;font-weight:300">Status da Conexão</text><br/>
+			<text id="CNEstatus">?</text-->
+		</div>
+		<div>
+			<div id="bg0" class="backgroundPic" style="background-image:url('Media/Background/0.png')"></div>
+			<div id="bg1" class="backgroundPicH" style="background-image:url('Media/Background/1.png')"></div>
+			<div id="bg2" class="backgroundPicH" style="background-image:url('Media/Background/2.png')"></div>
+			<div id="bg3" class="backgroundPicH" style="background-image:url('Media/Background/3.png')"></div>
+			<div id="bg4" class="backgroundPicH" style="background-image:url('Media/Background/4.png')"></div>
+			<div id="bg5" class="backgroundPicH" style="background-image:url('Media/Background/5.png')"></div>
+			<div id="bg6" class="backgroundPicH" style="background-image:url('Media/Background/6.png')"></div>
+			<div id="bg7" class="backgroundPicH" style="background-image:url('Media/Background/7.png')"></div>
+			<div id="bg8" class="backgroundPicH" style="background-image:url('Media/Background/8.png')"></div>
+			<div id="bg9" class="backgroundPicH" style="background-image:url('Media/Background/9.png')"></div>
+			<div id="bg10" class="backgroundPicH" style="background-image:url('Media/Background/10.png')"></div>
+			<div id="bg11" class="backgroundPicH" style="background-image:url('Media/Background/11.png')"></div>
+		<div>
+	</body>
+</html>
